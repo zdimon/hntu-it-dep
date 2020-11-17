@@ -1,0 +1,15 @@
+#!/bin/bash
+cd tst
+for VAL in $(ls | grep pdf) {0..50..2}
+    do
+    echo $VAL
+done
+
+function myfun ()
+{
+    echo 'This is function'
+    echo $1
+    echo $#
+}
+
+myfun 1 2 3 4
